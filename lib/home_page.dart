@@ -5,30 +5,30 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final alucard = Hero(
+    final icon_gambar = Hero(
       tag: 'hero',
       child: Padding(
         padding: EdgeInsets.all(16.0),
         child: CircleAvatar(
           radius: 72.0,
           backgroundColor: Colors.transparent,
-          backgroundImage: AssetImage('assets/alucard.jpg'),
+          backgroundImage: AssetImage('assets/profile.png'),
         ),
       ),
     );
 
-    final welcome = Padding(
+    final sub_judul = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Welcome Alucard',
+        'Selamat Datang User',
         style: TextStyle(fontSize: 28.0, color: Colors.white),
       ),
     );
 
-    final lorem = Padding(
+    final isi_konten = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit condimentum mauris id tempor. Praesent eu commodo lacus. Praesent eget mi sed libero eleifend tempor. Sed at fringilla ipsum. Duis malesuada feugiat urna vitae convallis. Aliquam eu libero arcu.',
+        'Selamat Datang Di Halaman Login',
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
         ]),
       ),
       child: Column(
-        children: <Widget>[alucard, welcome, lorem],
+        children: <Widget>[icon_gambar, sub_judul, isi_konten],
       ),
     );
 
